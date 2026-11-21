@@ -84,7 +84,6 @@ h2 { font-size: 20px; margin-bottom: 12px; }
 .upload-preview { margin-bottom: 12px; border-radius: 14px; overflow: hidden; max-height: 210px; background: #0f172a; }
 .upload-preview img, .upload-preview video { width: 100%; max-height: 210px; object-fit: contain; display: block; }
 
-/* Inbox + نقطة النشاط الخضراء */
 .inbox-topbar { display: flex; align-items: center; justify-content: space-between; padding: 6px 16px 10px; }
 .inbox-top-icon { font-size: 21px; color: #161823; padding: 4px; }
 .inbox-title-wrap { display: flex; align-items: center; gap: 6px; }
@@ -126,7 +125,6 @@ h2 { font-size: 20px; margin-bottom: 12px; }
 .inbox-row-side { display: flex; align-items: center; gap: 8px; flex-shrink: 0; color: #9ca3af; font-size: 19px; }
 .inbox-badge-red { background: #fe2c55; color: #fff; font-size: 11px; font-weight: 800; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 99px; display: grid; place-items: center; }
 
-/* Profile & User Profile */
 .profile-topbar { display: flex; align-items: center; justify-content: space-between; padding: 6px 14px; }
 .profile-top-right { display: flex; align-items: center; gap: 12px; }
 .profile-icon-btn { font-size: 21px; color: #161823; padding: 4px; }
@@ -172,7 +170,6 @@ h2 { font-size: 20px; margin-bottom: 12px; }
 .user-prof-bio-box { text-align: center; padding: 0 16px 10px; font-size: 13px; color: #374151; }
 .user-prof-bio-box small { display: block; color: #6b7280; margin-top: 3px; font-size: 11px; }
 
-/* Private Chat */
 #dzChatRoom { position: fixed; inset: 0; z-index: 99980; background: #fff; color: #161823; display: flex; flex-direction: column; width: 100%; max-width: 100%; margin: auto; }
 .dm-topbar { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid #f1f2f5; background: #fff; }
 .dm-top-right { display: flex; align-items: center; gap: 10px; min-width: 0; }
@@ -359,6 +356,15 @@ h2 { font-size: 20px; margin-bottom: 12px; }
 .live-share-friend .av { width: 52px; height: 52px; border-radius: 50%; background: #f1f2f5; overflow: hidden; display: grid; place-items: center; font-size: 20px; border: 2px solid #36d69b; }
 .live-share-friend .av img { width: 100%; height: 100%; object-fit: cover; }
 .live-share-friend small { font-size: 11px; max-width: 68px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.dz-top-notify { position: fixed; top: -110px; left: 50%; transform: translateX(-50%); width: calc(100% - 24px); max-width: 430px; background: #fff; color: #161823; border: 1px solid #e5e7eb; box-shadow: 0 10px 30px rgba(0,0,0,0.22); border-radius: 16px; padding: 10px 12px; display: flex; align-items: center; gap: 10px; z-index: 100001; transition: top .28s ease; cursor: pointer; direction: rtl; }
+.dz-top-notify.show { top: 12px; }
+.dz-top-notify-av { width: 42px; height: 42px; border-radius: 50%; overflow: hidden; background: #f1f2f5; display: grid; place-items: center; font-size: 18px; flex-shrink: 0; border: 2px solid #22c55e; }
+.dz-top-notify-av img { width: 100%; height: 100%; object-fit: cover; }
+.dz-top-notify-body { min-width: 0; flex: 1; }
+.dz-top-notify-body strong { display: block; font-size: 13px; color: #07845b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dz-top-notify-body small { display: block; font-size: 12px; color: #374151; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.live-audio-unlock { align-self: center; background: #f59e0b; color: #111; font-size: 11px; font-weight: 800; padding: 5px 12px; border-radius: 99px; margin-bottom: 5px; flex-shrink: 0; }
 
 @media (min-width: 600px) {
   .app, .topbar, .bottom-nav, .friends-topbar, #dzLiveRoom, #dzChatRoom, #dzFollowsModal, #dzUserProfileModal, #dzSearchModal { max-width: 460px; }
